@@ -1,0 +1,186 @@
+/*------------------------------------*\
+  RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0b1 | 201101
+   NOTE:WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+  display:block;
+}
+body{
+  line-height:1;
+}
+ol,ul{
+  list-style:none;
+}
+blockquote,q{
+  quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+  content:'';
+  content:none;
+}
+/* remember to define visible focus styles!
+:focus{
+  outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+  text-decoration:none;
+}
+del{
+  text-decoration:line-through;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/*------------------------------------*\
+  MAIN
+\*------------------------------------*/
+/* GO! */
+
+body {
+  background: #000 url(../images/bg.jpg) no-repeat top center;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.clear {
+  clear: both;
+}
+
+#subscriptions {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#subscriptions button {
+  width: 222px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background: -moz-linear-gradient(
+  top,
+  #42aaff 0%,
+  #003366);
+  background: -webkit-gradient(
+  linear, left top, left bottom, 
+  from(#42aaff),
+  to(#003366));
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px solid #003366;
+  -moz-box-shadow:
+  0px 1px 3px rgba(000,000,000,0.5),
+  inset 0px 0px 1px rgba(255,255,255,0.5);
+  -webkit-box-shadow:
+  0px 1px 3px rgba(000,000,000,0.5),
+  inset 0px 0px 1px rgba(255,255,255,0.5);
+  text-shadow:
+  0px -1px 0px rgba(000,000,000,0.7),
+  0px 1px 0px rgba(255,255,255,0.3);
+  font-size: 20px;
+  line-height: 20px;
+  -webkit-transition:font-size 0.3s ease-in;  
+  -moz-transition:font-size 0.3s ease-in;  
+  -o-transition:font-size 0.3s ease-in;  
+  transition:font-size 0.3s ease-in; 
+  margin: 0 5px 0px 5px;
+  height: 60px;
+  position: relative;
+}
+
+#subscriptions button:hover {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+#subscriptions ul {
+  display: none;
+}
+
+#subscriptions a {
+  background: #fff;
+  padding: 10px;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  color: #000;
+  text-decoration: none;
+  float: left;
+  margin: 5px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition:background-color 0.3s ease-in, color 0.3s ease-in;  
+  -moz-transition:background-color 0.3s ease-in, color 0.3s ease-in;  
+  -o-transition:background-color 0.3s ease-in, color 0.3s ease-in;  
+  transition:background-color 0.3s ease-in, color 0.3s ease-in; 
+}
+
+#subscriptions a:hover,
+#subscriptions a.on {
+  background-color: #555;
+  color: #fff
+}
+
+#sounder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+}
+
+#helpContainer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+
+#helpContent {
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  width: 300px;
+  margin: 2% 0 0 40%;
+}
+
+html {
+  overflow-y: scroll;
+}
